@@ -1,0 +1,24 @@
+name: phylogeny
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
+  - gmp=6.2.1=h58526e2_0
+  - libgcc-ng=13.1.0=he5830b7_0
+  - libgfortran-ng=13.1.0=h69a702a_0
+  - libgfortran5=13.1.0=h15d22d2_0
+  - libgomp=13.1.0=he5830b7_0
+  - libnsl=2.0.0=h7f98852_0
+  - libstdcxx-ng=13.1.0=hfd8a6a1_0
+  - libzlib=1.2.13=hd590300_5
+  - modeltest-ng=0.1.7=h103dbdd_2
+  - mpi=1.0=openmpi
+  - openmpi=4.1.5=h414af15_101
+  - perl=5.32.1=2_h7f98852_perl5
+  - raxml-ng=1.1.0=h6d1f11b_3
+  - vcftools=0.1.16=pl5321hdcf5f25_9
+  - zlib=1.2.13=hd590300_5
+prefix: /home/mmora/miniconda3/envs/phylogeny
