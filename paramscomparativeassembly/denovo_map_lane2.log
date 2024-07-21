@@ -1,0 +1,2721 @@
+denovo_map.pl version 2.64 started at 2023-11-06 00:57:22
+/home/mmora/miniconda3/envs/stacks/bin/denovo_map.pl -T 24 -o ./ --samples ./links/ --popmap new_popmap_lane2.txt -X ustacks:--force-diff-len
+
+ustacks
+==========
+
+Sample 1 of 28 'Tan254'
+----------
+ustacks -t gzfastq -f ./links/Tan254.1.fastq.gz -o . -i 1 --name Tan254 -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tan254.1.fastq.gz'
+  Sample ID: 1
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...3M...4M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 3751 uncalled nucleotides.
+
+Loaded 4153881 reads; formed:
+  76763 stacks representing 3830143 primary reads (92.2%)
+  305141 secondary stacks representing 323738 secondary reads (7.8%)
+
+Stack coverage: mean=49.90; stdev=367.31; max=55516; n_reads=3830143(92.2%)
+Removing repetitive stacks: cov > 1152 (mean+3*stdev)...
+  Blacklisted 7525 stacks.
+Coverage after repeat removal: mean=38.67; stdev=52.45; max=1147; n_reads=2677482(64.5%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 69238 stacks into 49344; blacklisted 1031 stacks.
+Coverage after assembling stacks: mean=44.84; stdev=47.05; max=1036; n_reads=2161258(52.0%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 203729 out of 323738 secondary reads (62.9%), 9309 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=49.06; stdev=50.78; max=1086; n_reads=2364987(56.9%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 49344 stacks into 45137 stacks.
+Coverage after gapped assembly: mean=53.76; stdev=52.96; max=1086; n_reads=2364987(56.9%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 58667 out of 120009 secondary reads (48.9%).
+Coverage after merging gapped secondary stacks: mean=55.09; stdev=54.72; max=1099; n_reads=2423654(58.3%)
+
+Final number of stacks built: 45137
+Final coverage: mean=55.09; stdev=54.72; max=1099; n_reads=2423654(58.3%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tan254'...done.
+ustacks is done.
+
+Sample 2 of 28 'Tan3755'
+----------
+ustacks -t gzfastq -f ./links/Tan3755.1.fastq.gz -o . -i 2 --name Tan3755 -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tan3755.1.fastq.gz'
+  Sample ID: 2
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...3M...4M...5M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 4933 uncalled nucleotides.
+
+Loaded 5218782 reads; formed:
+  103074 stacks representing 4834597 primary reads (92.6%)
+  360473 secondary stacks representing 384185 secondary reads (7.4%)
+
+Stack coverage: mean=46.90; stdev=604.37; max=94225; n_reads=4834597(92.6%)
+Removing repetitive stacks: cov > 1861 (mean+3*stdev)...
+  Blacklisted 10348 stacks.
+Coverage after repeat removal: mean=32.83; stdev=57.72; max=1826; n_reads=3044547(58.3%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 92726 stacks into 66120; blacklisted 1278 stacks.
+Coverage after assembling stacks: mean=35.43; stdev=43.05; max=974; n_reads=2293900(44.0%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 222871 out of 384185 secondary reads (58.0%), 9521 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=38.87; stdev=46.62; max=1023; n_reads=2516771(48.2%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 66120 stacks into 59121 stacks.
+Coverage after gapped assembly: mean=43.58; stdev=49.50; max=1023; n_reads=2516771(48.2%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 82089 out of 161314 secondary reads (50.9%).
+Coverage after merging gapped secondary stacks: mean=45.01; stdev=51.97; max=1211; n_reads=2598860(49.8%)
+
+Final number of stacks built: 59121
+Final coverage: mean=45.01; stdev=51.97; max=1211; n_reads=2598860(49.8%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tan3755'...done.
+ustacks is done.
+
+Sample 3 of 28 'Tan707'
+----------
+ustacks -t gzfastq -f ./links/Tan707.1.fastq.gz -o . -i 3 --name Tan707 -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tan707.1.fastq.gz'
+  Sample ID: 3
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...3M...4M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 4527 uncalled nucleotides.
+
+Loaded 4734082 reads; formed:
+  92083 stacks representing 4294982 primary reads (90.7%)
+  415175 secondary stacks representing 439100 secondary reads (9.3%)
+
+Stack coverage: mean=46.64; stdev=569.56; max=88481; n_reads=4294982(90.7%)
+Removing repetitive stacks: cov > 1756 (mean+3*stdev)...
+  Blacklisted 10466 stacks.
+Coverage after repeat removal: mean=32.13; stdev=55.07; max=1751; n_reads=2622616(55.4%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 81617 stacks into 56574; blacklisted 1133 stacks.
+Coverage after assembling stacks: mean=35.46; stdev=40.53; max=1107; n_reads=1962267(41.4%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 213556 out of 439100 secondary reads (48.6%), 9966 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=39.32; stdev=44.03; max=1211; n_reads=2175823(46.0%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 56574 stacks into 51126 stacks.
+Coverage after gapped assembly: mean=43.61; stdev=46.26; max=1211; n_reads=2175823(46.0%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 77850 out of 225544 secondary reads (34.5%).
+Coverage after merging gapped secondary stacks: mean=45.17; stdev=48.96; max=1211; n_reads=2253673(47.6%)
+
+Final number of stacks built: 51126
+Final coverage: mean=45.17; stdev=48.96; max=1211; n_reads=2253673(47.6%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tan707'...done.
+ustacks is done.
+
+Sample 4 of 28 'Tan709'
+----------
+ustacks -t gzfastq -f ./links/Tan709.1.fastq.gz -o . -i 4 --name Tan709 -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tan709.1.fastq.gz'
+  Sample ID: 4
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...3M...4M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 3903 uncalled nucleotides.
+
+Loaded 4396583 reads; formed:
+  94596 stacks representing 4036117 primary reads (91.8%)
+  338624 secondary stacks representing 360466 secondary reads (8.2%)
+
+Stack coverage: mean=42.67; stdev=473.15; max=55787; n_reads=4036117(91.8%)
+Removing repetitive stacks: cov > 1463 (mean+3*stdev)...
+  Blacklisted 9239 stacks.
+Coverage after repeat removal: mean=30.55; stdev=49.50; max=1457; n_reads=2607253(59.3%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 85357 stacks into 60113; blacklisted 1120 stacks.
+Coverage after assembling stacks: mean=33.86; stdev=38.48; max=900; n_reads=1994130(45.4%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 208048 out of 360466 secondary reads (57.7%), 9704 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=37.39; stdev=41.92; max=944; n_reads=2202178(50.1%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 60113 stacks into 52218 stacks.
+Coverage after gapped assembly: mean=43.17; stdev=44.95; max=944; n_reads=2202178(50.1%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 75883 out of 152418 secondary reads (49.8%).
+Coverage after merging gapped secondary stacks: mean=44.66; stdev=47.40; max=1241; n_reads=2278061(51.8%)
+
+Final number of stacks built: 52218
+Final coverage: mean=44.66; stdev=47.40; max=1241; n_reads=2278061(51.8%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tan709'...done.
+ustacks is done.
+
+Sample 5 of 28 'Tan710'
+----------
+ustacks -t gzfastq -f ./links/Tan710.1.fastq.gz -o . -i 5 --name Tan710 -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tan710.1.fastq.gz'
+  Sample ID: 5
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...3M...4M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 3959 uncalled nucleotides.
+
+Loaded 4518519 reads; formed:
+  101554 stacks representing 4151328 primary reads (91.9%)
+  345157 secondary stacks representing 367191 secondary reads (8.1%)
+
+Stack coverage: mean=40.88; stdev=340.48; max=59549; n_reads=4151328(91.9%)
+Removing repetitive stacks: cov > 1063 (mean+3*stdev)...
+  Blacklisted 8419 stacks.
+Coverage after repeat removal: mean=31.20; stdev=46.53; max=1058; n_reads=2905562(64.3%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 93135 stacks into 68939; blacklisted 1257 stacks.
+Coverage after assembling stacks: mean=34.65; stdev=42.66; max=824; n_reads=2340935(51.8%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 224395 out of 367191 secondary reads (61.1%), 10177 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=37.97; stdev=45.93; max=874; n_reads=2565330(56.8%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 68939 stacks into 61428 stacks.
+Coverage after gapped assembly: mean=42.72; stdev=48.89; max=874; n_reads=2565330(56.8%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 74127 out of 142796 secondary reads (51.9%).
+Coverage after merging gapped secondary stacks: mean=43.96; stdev=50.44; max=1126; n_reads=2639457(58.4%)
+
+Final number of stacks built: 61428
+Final coverage: mean=43.96; stdev=50.44; max=1126; n_reads=2639457(58.4%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tan710'...done.
+ustacks is done.
+
+Sample 6 of 28 'Tan711'
+----------
+ustacks -t gzfastq -f ./links/Tan711.1.fastq.gz -o . -i 6 --name Tan711 -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tan711.1.fastq.gz'
+  Sample ID: 6
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...3M...4M...5M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 4958 uncalled nucleotides.
+
+Loaded 5395297 reads; formed:
+  167679 stacks representing 4976519 primary reads (92.2%)
+  390985 secondary stacks representing 418778 secondary reads (7.8%)
+
+Stack coverage: mean=29.68; stdev=294.18; max=77901; n_reads=4976519(92.2%)
+Removing repetitive stacks: cov > 913 (mean+3*stdev)...
+  Blacklisted 8856 stacks.
+Coverage after repeat removal: mean=22.12; stdev=35.76; max=906; n_reads=3513678(65.1%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 158823 stacks into 130828; blacklisted 1399 stacks.
+Coverage after assembling stacks: mean=22.49; stdev=33.65; max=1130; n_reads=2907278(53.9%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 242615 out of 418778 secondary reads (57.9%), 10684 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=24.36; stdev=36.07; max=1189; n_reads=3149893(58.4%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 130828 stacks into 121814 stacks.
+Coverage after gapped assembly: mean=26.19; stdev=38.29; max=1189; n_reads=3149893(58.4%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 79613 out of 176163 secondary reads (45.2%).
+Coverage after merging gapped secondary stacks: mean=26.85; stdev=39.62; max=1192; n_reads=3229506(59.9%)
+
+Final number of stacks built: 121814
+Final coverage: mean=26.85; stdev=39.62; max=1192; n_reads=3229506(59.9%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tan711'...done.
+ustacks is done.
+
+Sample 7 of 28 'Tar177_N'
+----------
+ustacks -t gzfastq -f ./links/Tar177_N.1.fastq.gz -o . -i 7 --name Tar177_N -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tar177_N.1.fastq.gz'
+  Sample ID: 7
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...3M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 3616 uncalled nucleotides.
+
+Loaded 3906213 reads; formed:
+  127402 stacks representing 3562676 primary reads (91.2%)
+  322431 secondary stacks representing 343537 secondary reads (8.8%)
+
+Stack coverage: mean=27.96; stdev=239.55; max=48018; n_reads=3562676(91.2%)
+Removing repetitive stacks: cov > 747 (mean+3*stdev)...
+  Blacklisted 8588 stacks.
+Coverage after repeat removal: mean=21.54; stdev=30.93; max=746; n_reads=2559549(65.5%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 118814 stacks into 88755; blacklisted 1792 stacks.
+Coverage after assembling stacks: mean=23.83; stdev=30.93; max=675; n_reads=2068975(53.0%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 201635 out of 343537 secondary reads (58.7%), 8917 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=26.16; stdev=33.50; max=729; n_reads=2270610(58.1%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 88755 stacks into 84256 stacks.
+Coverage after gapped assembly: mean=27.58; stdev=35.20; max=815; n_reads=2270610(58.1%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 56993 out of 141902 secondary reads (40.2%).
+Coverage after merging gapped secondary stacks: mean=28.28; stdev=36.41; max=821; n_reads=2327603(59.6%)
+
+Final number of stacks built: 84256
+Final coverage: mean=28.28; stdev=36.41; max=821; n_reads=2327603(59.6%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tar177_N'...done.
+ustacks is done.
+
+Sample 8 of 28 'Tar260_allo'
+----------
+ustacks -t gzfastq -f ./links/Tar260_allo.1.fastq.gz -o . -i 8 --name Tar260_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tar260_allo.1.fastq.gz'
+  Sample ID: 8
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 1930 uncalled nucleotides.
+
+Loaded 2082995 reads; formed:
+  72383 stacks representing 1904951 primary reads (91.5%)
+  167686 secondary stacks representing 178044 secondary reads (8.5%)
+
+Stack coverage: mean=26.32; stdev=203.87; max=37993; n_reads=1904951(91.5%)
+Removing repetitive stacks: cov > 638 (mean+3*stdev)...
+  Blacklisted 5455 stacks.
+Coverage after repeat removal: mean=19.76; stdev=26.06; max=623; n_reads=1322781(63.5%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 66928 stacks into 50366; blacklisted 841 stacks.
+Coverage after assembling stacks: mean=21.14; stdev=21.08; max=505; n_reads=1045117(50.2%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 105261 out of 178044 secondary reads (59.1%), 4918 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=23.27; stdev=23.07; max=534; n_reads=1150378(55.2%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 50366 stacks into 47663 stacks.
+Coverage after gapped assembly: mean=24.62; stdev=24.07; max=534; n_reads=1150378(55.2%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 34454 out of 72783 secondary reads (47.3%).
+Coverage after merging gapped secondary stacks: mean=25.36; stdev=25.76; max=559; n_reads=1184832(56.9%)
+
+Final number of stacks built: 47663
+Final coverage: mean=25.36; stdev=25.76; max=559; n_reads=1184832(56.9%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tar260_allo'...done.
+ustacks is done.
+
+Sample 9 of 28 'Tar299_N'
+----------
+ustacks -t gzfastq -f ./links/Tar299_N.1.fastq.gz -o . -i 9 --name Tar299_N -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tar299_N.1.fastq.gz'
+  Sample ID: 9
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...3M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 3190 uncalled nucleotides.
+
+Loaded 3396816 reads; formed:
+  71250 stacks representing 3128563 primary reads (92.1%)
+  252992 secondary stacks representing 268253 secondary reads (7.9%)
+
+Stack coverage: mean=43.91; stdev=342.49; max=56089; n_reads=3128563(92.1%)
+Removing repetitive stacks: cov > 1072 (mean+3*stdev)...
+  Blacklisted 6820 stacks.
+Coverage after repeat removal: mean=33.51; stdev=44.64; max=1071; n_reads=2159144(63.6%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 64430 stacks into 46219; blacklisted 867 stacks.
+Coverage after assembling stacks: mean=38.57; stdev=37.83; max=778; n_reads=1744766(51.4%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 167089 out of 268253 secondary reads (62.3%), 8152 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=42.26; stdev=40.69; max=827; n_reads=1911855(56.3%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 46219 stacks into 42961 stacks.
+Coverage after gapped assembly: mean=45.55; stdev=42.34; max=827; n_reads=1911855(56.3%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 48925 out of 101164 secondary reads (48.4%).
+Coverage after merging gapped secondary stacks: mean=46.71; stdev=44.15; max=859; n_reads=1960780(57.7%)
+
+Final number of stacks built: 42961
+Final coverage: mean=46.71; stdev=44.15; max=859; n_reads=1960780(57.7%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tar299_N'...done.
+ustacks is done.
+
+Sample 10 of 28 'Tar526_c'
+----------
+ustacks -t gzfastq -f ./links/Tar526_c.1.fastq.gz -o . -i 10 --name Tar526_c -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tar526_c.1.fastq.gz'
+  Sample ID: 10
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 2614 uncalled nucleotides.
+
+Loaded 2913897 reads; formed:
+  80661 stacks representing 2668331 primary reads (91.6%)
+  231344 secondary stacks representing 245566 secondary reads (8.4%)
+
+Stack coverage: mean=33.08; stdev=284.84; max=53298; n_reads=2668331(91.6%)
+Removing repetitive stacks: cov > 888 (mean+3*stdev)...
+  Blacklisted 5858 stacks.
+Coverage after repeat removal: mean=25.44; stdev=35.34; max=879; n_reads=1902918(65.3%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 74803 stacks into 54945; blacklisted 933 stacks.
+Coverage after assembling stacks: mean=28.50; stdev=30.93; max=800; n_reads=1536056(52.7%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 151498 out of 245566 secondary reads (61.7%), 7100 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=31.31; stdev=33.46; max=848; n_reads=1687554(57.9%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 54945 stacks into 50386 stacks.
+Coverage after gapped assembly: mean=34.20; stdev=35.24; max=854; n_reads=1687554(57.9%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 45491 out of 94068 secondary reads (48.4%).
+Coverage after merging gapped secondary stacks: mean=35.12; stdev=36.68; max=933; n_reads=1733045(59.5%)
+
+Final number of stacks built: 50386
+Final coverage: mean=35.12; stdev=36.68; max=933; n_reads=1733045(59.5%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tar526_c'...done.
+ustacks is done.
+
+Sample 11 of 28 'Tar528_c'
+----------
+ustacks -t gzfastq -f ./links/Tar528_c.1.fastq.gz -o . -i 11 --name Tar528_c -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tar528_c.1.fastq.gz'
+  Sample ID: 11
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...3M...4M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 4156 uncalled nucleotides.
+
+Loaded 4517070 reads; formed:
+  122436 stacks representing 4135091 primary reads (91.5%)
+  357950 secondary stacks representing 381979 secondary reads (8.5%)
+
+Stack coverage: mean=33.77; stdev=307.85; max=65191; n_reads=4135091(91.5%)
+Removing repetitive stacks: cov > 958 (mean+3*stdev)...
+  Blacklisted 7874 stacks.
+Coverage after repeat removal: mean=25.91; stdev=39.58; max=957; n_reads=2968318(65.7%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 114562 stacks into 87510; blacklisted 1446 stacks.
+Coverage after assembling stacks: mean=28.27; stdev=37.70; max=850; n_reads=2428551(53.8%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 230005 out of 381979 secondary reads (60.2%), 10677 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=30.94; stdev=40.64; max=880; n_reads=2658556(58.9%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 87510 stacks into 77695 stacks.
+Coverage after gapped assembly: mean=34.94; stdev=44.00; max=880; n_reads=2658556(58.9%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 76576 out of 151974 secondary reads (50.4%).
+Coverage after merging gapped secondary stacks: mean=35.94; stdev=45.46; max=882; n_reads=2735132(60.6%)
+
+Final number of stacks built: 77695
+Final coverage: mean=35.94; stdev=45.46; max=882; n_reads=2735132(60.6%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tar528_c'...done.
+ustacks is done.
+
+Sample 12 of 28 'Tar529_N'
+----------
+ustacks -t gzfastq -f ./links/Tar529_N.1.fastq.gz -o . -i 12 --name Tar529_N -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tar529_N.1.fastq.gz'
+  Sample ID: 12
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...3M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 3181 uncalled nucleotides.
+
+Loaded 3515779 reads; formed:
+  83059 stacks representing 3224207 primary reads (91.7%)
+  274711 secondary stacks representing 291572 secondary reads (8.3%)
+
+Stack coverage: mean=38.82; stdev=271.21; max=41235; n_reads=3224207(91.7%)
+Removing repetitive stacks: cov > 853 (mean+3*stdev)...
+  Blacklisted 6424 stacks.
+Coverage after repeat removal: mean=30.20; stdev=39.50; max=828; n_reads=2314109(65.8%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 76635 stacks into 57513; blacklisted 977 stacks.
+Coverage after assembling stacks: mean=34.00; stdev=37.91; max=635; n_reads=1917762(54.5%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 182108 out of 291572 secondary reads (62.5%), 7970 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=37.23; stdev=40.89; max=688; n_reads=2099870(59.7%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 57513 stacks into 52915 stacks.
+Coverage after gapped assembly: mean=40.53; stdev=42.99; max=698; n_reads=2099870(59.7%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 53690 out of 109464 secondary reads (49.0%).
+Coverage after merging gapped secondary stacks: mean=41.57; stdev=44.23; max=702; n_reads=2153560(61.3%)
+
+Final number of stacks built: 52915
+Final coverage: mean=41.57; stdev=44.23; max=702; n_reads=2153560(61.3%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tar529_N'...done.
+ustacks is done.
+
+Sample 13 of 28 'Tar547_c'
+----------
+ustacks -t gzfastq -f ./links/Tar547_c.1.fastq.gz -o . -i 13 --name Tar547_c -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tar547_c.1.fastq.gz'
+  Sample ID: 13
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 2100 uncalled nucleotides.
+
+Loaded 2376351 reads; formed:
+  80075 stacks representing 2164425 primary reads (91.1%)
+  199534 secondary stacks representing 211926 secondary reads (8.9%)
+
+Stack coverage: mean=27.03; stdev=211.68; max=36786; n_reads=2164425(91.1%)
+Removing repetitive stacks: cov > 663 (mean+3*stdev)...
+  Blacklisted 5242 stacks.
+Coverage after repeat removal: mean=21.10; stdev=27.91; max=651; n_reads=1579244(66.5%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 74833 stacks into 55793; blacklisted 939 stacks.
+Coverage after assembling stacks: mean=23.37; stdev=24.75; max=573; n_reads=1279369(53.8%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 126902 out of 211926 secondary reads (59.9%), 5875 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=25.69; stdev=26.86; max=616; n_reads=1406271(59.2%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 55793 stacks into 50000 stacks.
+Coverage after gapped assembly: mean=28.73; stdev=28.70; max=616; n_reads=1406271(59.2%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 42877 out of 85024 secondary reads (50.4%).
+Coverage after merging gapped secondary stacks: mean=29.60; stdev=29.99; max=619; n_reads=1449148(61.0%)
+
+Final number of stacks built: 50000
+Final coverage: mean=29.60; stdev=29.99; max=619; n_reads=1449148(61.0%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tar547_c'...done.
+ustacks is done.
+
+Sample 14 of 28 'Tar552_allo'
+----------
+ustacks -t gzfastq -f ./links/Tar552_allo.1.fastq.gz -o . -i 14 --name Tar552_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tar552_allo.1.fastq.gz'
+  Sample ID: 14
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 192 uncalled nucleotides.
+
+Loaded 237750 reads; formed:
+  20163 stacks representing 209946 primary reads (88.3%)
+  25383 secondary stacks representing 27804 secondary reads (11.7%)
+
+Stack coverage: mean=10.41; stdev=21.51; max=1229; n_reads=209946(88.3%)
+Removing repetitive stacks: cov > 75 (mean+3*stdev)...
+  Blacklisted 1220 stacks.
+Coverage after repeat removal: mean=8.91; stdev=5.90; max=75; n_reads=168830(71.0%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 18943 stacks into 16750; blacklisted 200 stacks.
+Coverage after assembling stacks: mean=9.06; stdev=6.01; max=111; n_reads=149008(62.7%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 13707 out of 27804 secondary reads (49.3%), 680 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=9.89; stdev=6.61; max=114; n_reads=162715(68.4%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 16750 stacks into 15631 stacks.
+Coverage after gapped assembly: mean=10.61; stdev=7.61; max=169; n_reads=162715(68.4%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 4732 out of 14097 secondary reads (33.6%).
+Coverage after merging gapped secondary stacks: mean=10.92; stdev=8.16; max=169; n_reads=167447(70.4%)
+
+Final number of stacks built: 15631
+Final coverage: mean=10.92; stdev=8.16; max=169; n_reads=167447(70.4%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tar552_allo'...done.
+ustacks is done.
+
+Sample 15 of 28 'Tar553_allo'
+----------
+ustacks -t gzfastq -f ./links/Tar553_allo.1.fastq.gz -o . -i 15 --name Tar553_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tar553_allo.1.fastq.gz'
+  Sample ID: 15
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 73 uncalled nucleotides.
+
+Loaded 81245 reads; formed:
+  7322 stacks representing 70375 primary reads (86.6%)
+  9956 secondary stacks representing 10870 secondary reads (13.4%)
+
+Stack coverage: mean=9.61; stdev=17.17; max=573; n_reads=70375(86.6%)
+Removing repetitive stacks: cov > 62 (mean+3*stdev)...
+  Blacklisted 316 stacks.
+Coverage after repeat removal: mean=8.50; stdev=4.99; max=61; n_reads=59522(73.3%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 7006 stacks into 6491; blacklisted 48 stacks.
+Coverage after assembling stacks: mean=8.56; stdev=5.08; max=62; n_reads=54852(67.5%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 4950 out of 10870 secondary reads (45.5%), 210 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=9.33; stdev=5.57; max=75; n_reads=59802(73.6%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 6491 stacks into 6399 stacks.
+Coverage after gapped assembly: mean=9.47; stdev=5.82; max=75; n_reads=59802(73.6%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 1102 out of 5920 secondary reads (18.6%).
+Coverage after merging gapped secondary stacks: mean=9.64; stdev=6.10; max=81; n_reads=60904(75.0%)
+
+Final number of stacks built: 6399
+Final coverage: mean=9.64; stdev=6.10; max=81; n_reads=60904(75.0%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tar553_allo'...done.
+ustacks is done.
+
+Sample 16 of 28 'Tar769_allo'
+----------
+ustacks -t gzfastq -f ./links/Tar769_allo.1.fastq.gz -o . -i 16 --name Tar769_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tar769_allo.1.fastq.gz'
+  Sample ID: 16
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...3M...4M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 4313 uncalled nucleotides.
+
+Loaded 4664645 reads; formed:
+  92989 stacks representing 4313731 primary reads (92.5%)
+  329362 secondary stacks representing 350914 secondary reads (7.5%)
+
+Stack coverage: mean=46.39; stdev=454.94; max=91696; n_reads=4313731(92.5%)
+Removing repetitive stacks: cov > 1412 (mean+3*stdev)...
+  Blacklisted 9825 stacks.
+Coverage after repeat removal: mean=33.81; stdev=53.32; max=1411; n_reads=2811443(60.3%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 83164 stacks into 59907; blacklisted 1054 stacks.
+Coverage after assembling stacks: mean=36.71; stdev=42.32; max=915; n_reads=2157168(46.2%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 209371 out of 350914 secondary reads (59.7%), 9143 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=40.28; stdev=45.80; max=964; n_reads=2366539(50.7%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 59907 stacks into 56301 stacks.
+Coverage after gapped assembly: mean=42.91; stdev=47.91; max=964; n_reads=2366539(50.7%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 66175 out of 141543 secondary reads (46.8%).
+Coverage after merging gapped secondary stacks: mean=44.11; stdev=50.32; max=1166; n_reads=2432714(52.2%)
+
+Final number of stacks built: 56301
+Final coverage: mean=44.11; stdev=50.32; max=1166; n_reads=2432714(52.2%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tar769_allo'...done.
+ustacks is done.
+
+Sample 17 of 28 'Tar770_allo'
+----------
+ustacks -t gzfastq -f ./links/Tar770_allo.1.fastq.gz -o . -i 17 --name Tar770_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tar770_allo.1.fastq.gz'
+  Sample ID: 17
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...3M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 3499 uncalled nucleotides.
+
+Loaded 3697012 reads; formed:
+  102138 stacks representing 3390793 primary reads (91.7%)
+  286731 secondary stacks representing 306219 secondary reads (8.3%)
+
+Stack coverage: mean=33.20; stdev=326.11; max=66032; n_reads=3390793(91.7%)
+Removing repetitive stacks: cov > 1012 (mean+3*stdev)...
+  Blacklisted 8509 stacks.
+Coverage after repeat removal: mean=24.05; stdev=37.80; max=1000; n_reads=2251484(60.9%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 93629 stacks into 70535; blacklisted 1120 stacks.
+Coverage after assembling stacks: mean=25.22; stdev=30.69; max=944; n_reads=1748130(47.3%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 177091 out of 306219 secondary reads (57.8%), 7742 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=27.77; stdev=33.26; max=1004; n_reads=1925221(52.1%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 70535 stacks into 63660 stacks.
+Coverage after gapped assembly: mean=30.83; stdev=35.60; max=1004; n_reads=1925221(52.1%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 62891 out of 129128 secondary reads (48.7%).
+Coverage after merging gapped secondary stacks: mean=31.84; stdev=37.61; max=1007; n_reads=1988112(53.8%)
+
+Final number of stacks built: 63660
+Final coverage: mean=31.84; stdev=37.61; max=1007; n_reads=1988112(53.8%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tar770_allo'...done.
+ustacks is done.
+
+Sample 18 of 28 'Tar771_allo'
+----------
+ustacks -t gzfastq -f ./links/Tar771_allo.1.fastq.gz -o . -i 18 --name Tar771_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tar771_allo.1.fastq.gz'
+  Sample ID: 18
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...3M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 2537 uncalled nucleotides.
+
+Loaded 3022121 reads; formed:
+  123630 stacks representing 2759579 primary reads (91.3%)
+  244875 secondary stacks representing 262542 secondary reads (8.7%)
+
+Stack coverage: mean=22.32; stdev=193.39; max=41167; n_reads=2759579(91.3%)
+Removing repetitive stacks: cov > 603 (mean+3*stdev)...
+  Blacklisted 6658 stacks.
+Coverage after repeat removal: mean=17.38; stdev=24.29; max=599; n_reads=2033298(67.3%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 116972 stacks into 90913; blacklisted 1382 stacks.
+Coverage after assembling stacks: mean=18.49; stdev=22.22; max=420; n_reads=1653412(54.7%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 150631 out of 262542 secondary reads (57.4%), 6798 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=20.18; stdev=23.94; max=432; n_reads=1804043(59.7%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 90913 stacks into 86050 stacks.
+Coverage after gapped assembly: mean=21.34; stdev=25.19; max=442; n_reads=1804043(59.7%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 44344 out of 111911 secondary reads (39.6%).
+Coverage after merging gapped secondary stacks: mean=21.86; stdev=26.19; max=502; n_reads=1848387(61.2%)
+
+Final number of stacks built: 86050
+Final coverage: mean=21.86; stdev=26.19; max=502; n_reads=1848387(61.2%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tar771_allo'...done.
+ustacks is done.
+
+Sample 19 of 28 'Tjo3765'
+----------
+ustacks -t gzfastq -f ./links/Tjo3765.1.fastq.gz -o . -i 19 --name Tjo3765 -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tjo3765.1.fastq.gz'
+  Sample ID: 19
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...3M...4M...5M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 5413 uncalled nucleotides.
+
+Loaded 5874763 reads; formed:
+  207963 stacks representing 5403369 primary reads (92.0%)
+  438894 secondary stacks representing 471394 secondary reads (8.0%)
+
+Stack coverage: mean=25.98; stdev=296.23; max=91006; n_reads=5403369(92.0%)
+Removing repetitive stacks: cov > 915 (mean+3*stdev)...
+  Blacklisted 9259 stacks.
+Coverage after repeat removal: mean=19.52; stdev=32.58; max=902; n_reads=3877940(66.0%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 198704 stacks into 164658; blacklisted 1682 stacks.
+Coverage after assembling stacks: mean=19.70; stdev=29.81; max=818; n_reads=3207175(54.6%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 268008 out of 471394 secondary reads (56.9%), 10974 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=21.34; stdev=32.00; max=851; n_reads=3475183(59.2%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 164658 stacks into 155339 stacks.
+Coverage after gapped assembly: mean=22.64; stdev=33.84; max=851; n_reads=3475183(59.2%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 82794 out of 203386 secondary reads (40.7%).
+Coverage after merging gapped secondary stacks: mean=23.18; stdev=35.12; max=1082; n_reads=3557977(60.6%)
+
+Final number of stacks built: 155339
+Final coverage: mean=23.18; stdev=35.12; max=1082; n_reads=3557977(60.6%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tjo3765'...done.
+ustacks is done.
+
+Sample 20 of 28 'Tma068_allo'
+----------
+ustacks -t gzfastq -f ./links/Tma068_allo.1.fastq.gz -o . -i 20 --name Tma068_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tma068_allo.1.fastq.gz'
+  Sample ID: 20
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 113 uncalled nucleotides.
+
+Loaded 97783 reads; formed:
+  8772 stacks representing 85292 primary reads (87.2%)
+  11397 secondary stacks representing 12491 secondary reads (12.8%)
+
+Stack coverage: mean=9.72; stdev=13.97; max=686; n_reads=85292(87.2%)
+Removing repetitive stacks: cov > 52 (mean+3*stdev)...
+  Blacklisted 387 stacks.
+Coverage after repeat removal: mean=8.75; stdev=5.14; max=52; n_reads=73362(75.0%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 8385 stacks into 7667; blacklisted 80 stacks.
+Coverage after assembling stacks: mean=8.89; stdev=5.52; max=72; n_reads=66915(68.4%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 5921 out of 12491 secondary reads (47.4%), 266 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=9.67; stdev=6.03; max=84; n_reads=72836(74.5%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 7667 stacks into 7323 stacks.
+Coverage after gapped assembly: mean=10.14; stdev=6.85; max=110; n_reads=72836(74.5%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 1719 out of 6570 secondary reads (26.2%).
+Coverage after merging gapped secondary stacks: mean=10.38; stdev=7.19; max=117; n_reads=74555(76.2%)
+
+Final number of stacks built: 7323
+Final coverage: mean=10.38; stdev=7.19; max=117; n_reads=74555(76.2%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tma068_allo'...done.
+ustacks is done.
+
+Sample 21 of 28 'Tma071_allo'
+----------
+ustacks -t gzfastq -f ./links/Tma071_allo.1.fastq.gz -o . -i 21 --name Tma071_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tma071_allo.1.fastq.gz'
+  Sample ID: 21
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 122 uncalled nucleotides.
+
+Loaded 132441 reads; formed:
+  11415 stacks representing 112970 primary reads (85.3%)
+  17992 secondary stacks representing 19471 secondary reads (14.7%)
+
+Stack coverage: mean=9.90; stdev=22.53; max=1016; n_reads=112970(85.3%)
+Removing repetitive stacks: cov > 78 (mean+3*stdev)...
+  Blacklisted 618 stacks.
+Coverage after repeat removal: mean=8.51; stdev=5.48; max=78; n_reads=91841(69.3%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 10797 stacks into 9680; blacklisted 106 stacks.
+Coverage after assembling stacks: mean=8.64; stdev=5.70; max=118; n_reads=82274(62.1%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 8639 out of 19471 secondary reads (44.4%), 428 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=9.55; stdev=6.27; max=125; n_reads=90913(68.6%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 9680 stacks into 9396 stacks.
+Coverage after gapped assembly: mean=9.84; stdev=6.73; max=125; n_reads=90913(68.6%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 2695 out of 10832 secondary reads (24.9%).
+Coverage after merging gapped secondary stacks: mean=10.13; stdev=7.39; max=127; n_reads=93608(70.7%)
+
+Final number of stacks built: 9396
+Final coverage: mean=10.13; stdev=7.39; max=127; n_reads=93608(70.7%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tma071_allo'...done.
+ustacks is done.
+
+Sample 22 of 28 'Tma556_allo'
+----------
+ustacks -t gzfastq -f ./links/Tma556_allo.1.fastq.gz -o . -i 22 --name Tma556_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tma556_allo.1.fastq.gz'
+  Sample ID: 22
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 94 uncalled nucleotides.
+
+Loaded 100469 reads; formed:
+  8529 stacks representing 87091 primary reads (86.7%)
+  12226 secondary stacks representing 13378 secondary reads (13.3%)
+
+Stack coverage: mean=10.21; stdev=32.76; max=1875; n_reads=87091(86.7%)
+Removing repetitive stacks: cov > 109 (mean+3*stdev)...
+  Blacklisted 206 stacks.
+Coverage after repeat removal: mean=8.88; stdev=6.94; max=107; n_reads=73941(73.6%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 8323 stacks into 7001; blacklisted 99 stacks.
+Coverage after assembling stacks: mean=8.66; stdev=6.02; max=122; n_reads=59560(59.3%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 5995 out of 13378 secondary reads (44.8%), 242 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=9.53; stdev=6.64; max=126; n_reads=65555(65.2%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 7001 stacks into 6645 stacks.
+Coverage after gapped assembly: mean=10.05; stdev=7.33; max=126; n_reads=65555(65.2%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 2024 out of 7383 secondary reads (27.4%).
+Coverage after merging gapped secondary stacks: mean=10.36; stdev=7.85; max=126; n_reads=67579(67.3%)
+
+Final number of stacks built: 6645
+Final coverage: mean=10.36; stdev=7.85; max=126; n_reads=67579(67.3%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tma556_allo'...done.
+ustacks is done.
+
+Sample 23 of 28 'Tma559_allo'
+----------
+ustacks -t gzfastq -f ./links/Tma559_allo.1.fastq.gz -o . -i 23 --name Tma559_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tma559_allo.1.fastq.gz'
+  Sample ID: 23
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 45 uncalled nucleotides.
+
+Loaded 50093 reads; formed:
+  5110 stacks representing 41783 primary reads (83.4%)
+  7597 secondary stacks representing 8310 secondary reads (16.6%)
+
+Stack coverage: mean=8.18; stdev=8.84; max=254; n_reads=41783(83.4%)
+Removing repetitive stacks: cov > 35 (mean+3*stdev)...
+  Blacklisted 217 stacks.
+Coverage after repeat removal: mean=7.48; stdev=3.94; max=35; n_reads=36583(73.0%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 4893 stacks into 4295; blacklisted 59 stacks.
+Coverage after assembling stacks: mean=7.68; stdev=4.38; max=52; n_reads=32315(64.5%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 3872 out of 8310 secondary reads (46.6%), 118 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=8.60; stdev=5.19; max=80; n_reads=36187(72.2%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 4295 stacks into 4200 stacks.
+Coverage after gapped assembly: mean=8.80; stdev=5.59; max=80; n_reads=36187(72.2%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 863 out of 4438 secondary reads (19.4%).
+Coverage after merging gapped secondary stacks: mean=9.01; stdev=5.98; max=102; n_reads=37050(74.0%)
+
+Final number of stacks built: 4200
+Final coverage: mean=9.01; stdev=5.98; max=102; n_reads=37050(74.0%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tma559_allo'...done.
+ustacks is done.
+
+Sample 24 of 28 'Tma560_allo'
+----------
+ustacks -t gzfastq -f ./links/Tma560_allo.1.fastq.gz -o . -i 24 --name Tma560_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tma560_allo.1.fastq.gz'
+  Sample ID: 24
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 122 uncalled nucleotides.
+
+Loaded 94461 reads; formed:
+  7919 stacks representing 82677 primary reads (87.5%)
+  10815 secondary stacks representing 11784 secondary reads (12.5%)
+
+Stack coverage: mean=10.44; stdev=19.19; max=1029; n_reads=82677(87.5%)
+Removing repetitive stacks: cov > 69 (mean+3*stdev)...
+  Blacklisted 356 stacks.
+Coverage after repeat removal: mean=9.18; stdev=6.30; max=69; n_reads=69408(73.5%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 7563 stacks into 6758; blacklisted 81 stacks.
+Coverage after assembling stacks: mean=9.20; stdev=6.10; max=85; n_reads=61008(64.6%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 5454 out of 11784 secondary reads (46.3%), 233 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=10.02; stdev=6.60; max=89; n_reads=66462(70.4%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 6758 stacks into 6525 stacks.
+Coverage after gapped assembly: mean=10.39; stdev=7.17; max=89; n_reads=66462(70.4%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 1746 out of 6330 secondary reads (27.6%).
+Coverage after merging gapped secondary stacks: mean=10.66; stdev=7.63; max=110; n_reads=68208(72.2%)
+
+Final number of stacks built: 6525
+Final coverage: mean=10.66; stdev=7.63; max=110; n_reads=68208(72.2%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tma560_allo'...done.
+ustacks is done.
+
+Sample 25 of 28 'Tma561_allo'
+----------
+ustacks -t gzfastq -f ./links/Tma561_allo.1.fastq.gz -o . -i 25 --name Tma561_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tma561_allo.1.fastq.gz'
+  Sample ID: 25
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...1M...2M...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 2679 uncalled nucleotides.
+
+Loaded 2857160 reads; formed:
+  109944 stacks representing 2620548 primary reads (91.7%)
+  221273 secondary stacks representing 236612 secondary reads (8.3%)
+
+Stack coverage: mean=23.84; stdev=194.25; max=39769; n_reads=2620548(91.7%)
+Removing repetitive stacks: cov > 607 (mean+3*stdev)...
+  Blacklisted 5290 stacks.
+Coverage after repeat removal: mean=18.44; stdev=24.92; max=604; n_reads=1929307(67.5%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 104654 stacks into 86635; blacklisted 923 stacks.
+Coverage after assembling stacks: mean=19.09; stdev=23.06; max=610; n_reads=1633246(57.2%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 139039 out of 236612 secondary reads (58.8%), 5515 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=20.71; stdev=24.80; max=647; n_reads=1772285(62.0%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 86635 stacks into 79628 stacks.
+Coverage after gapped assembly: mean=22.56; stdev=26.62; max=662; n_reads=1772285(62.0%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 44655 out of 97573 secondary reads (45.8%).
+Coverage after merging gapped secondary stacks: mean=23.13; stdev=27.64; max=665; n_reads=1816940(63.6%)
+
+Final number of stacks built: 79628
+Final coverage: mean=23.13; stdev=27.64; max=665; n_reads=1816940(63.6%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tma561_allo'...done.
+ustacks is done.
+
+Sample 26 of 28 'Tma718_allo'
+----------
+ustacks -t gzfastq -f ./links/Tma718_allo.1.fastq.gz -o . -i 26 --name Tma718_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tma718_allo.1.fastq.gz'
+  Sample ID: 26
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 196 uncalled nucleotides.
+
+Loaded 213047 reads; formed:
+  17218 stacks representing 183510 primary reads (86.1%)
+  27273 secondary stacks representing 29537 secondary reads (13.9%)
+
+Stack coverage: mean=10.66; stdev=34.79; max=2938; n_reads=183510(86.1%)
+Removing repetitive stacks: cov > 116 (mean+3*stdev)...
+  Blacklisted 1137 stacks.
+Coverage after repeat removal: mean=8.75; stdev=6.47; max=116; n_reads=140636(66.0%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 16081 stacks into 13949; blacklisted 173 stacks.
+Coverage after assembling stacks: mean=8.83; stdev=5.96; max=145; n_reads=121188(56.9%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 13477 out of 29537 secondary reads (45.6%), 705 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=9.82; stdev=6.81; max=157; n_reads=134665(63.2%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 13949 stacks into 13370 stacks.
+Coverage after gapped assembly: mean=10.25; stdev=7.33; max=157; n_reads=134665(63.2%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 4626 out of 16060 secondary reads (28.8%).
+Coverage after merging gapped secondary stacks: mean=10.60; stdev=8.47; max=278; n_reads=139291(65.4%)
+
+Final number of stacks built: 13370
+Final coverage: mean=10.60; stdev=8.47; max=278; n_reads=139291(65.4%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tma718_allo'...done.
+ustacks is done.
+
+Sample 27 of 28 'Tma720_allo'
+----------
+ustacks -t gzfastq -f ./links/Tma720_allo.1.fastq.gz -o . -i 27 --name Tma720_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tma720_allo.1.fastq.gz'
+  Sample ID: 27
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 98 uncalled nucleotides.
+
+Loaded 119345 reads; formed:
+  9633 stacks representing 104633 primary reads (87.7%)
+  13539 secondary stacks representing 14712 secondary reads (12.3%)
+
+Stack coverage: mean=10.86; stdev=24.92; max=1361; n_reads=104633(87.7%)
+Removing repetitive stacks: cov > 86 (mean+3*stdev)...
+  Blacklisted 481 stacks.
+Coverage after repeat removal: mean=9.19; stdev=6.34; max=85; n_reads=84091(70.5%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 9152 stacks into 7931; blacklisted 102 stacks.
+Coverage after assembling stacks: mean=9.10; stdev=5.79; max=85; n_reads=70824(59.3%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 6747 out of 14712 secondary reads (45.9%), 269 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=9.97; stdev=6.30; max=94; n_reads=77571(65.0%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 7931 stacks into 7594 stacks.
+Coverage after gapped assembly: mean=10.42; stdev=7.05; max=105; n_reads=77571(65.0%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 2240 out of 7965 secondary reads (28.1%).
+Coverage after merging gapped secondary stacks: mean=10.72; stdev=7.73; max=149; n_reads=79811(66.9%)
+
+Final number of stacks built: 7594
+Final coverage: mean=10.72; stdev=7.73; max=149; n_reads=79811(66.9%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tma720_allo'...done.
+ustacks is done.
+
+Sample 28 of 28 'Tma729_allo'
+----------
+ustacks -t gzfastq -f ./links/Tma729_allo.1.fastq.gz -o . -i 28 --name Tma729_allo -p 24 --force-diff-len
+ustacks parameters selected:
+  Input file: './links/Tma729_allo.1.fastq.gz'
+  Sample ID: 28
+  Min depth of coverage to create a stack (m): 3
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 2
+  Max distance allowed to align secondary reads: 4
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: enabled
+  Minimum alignment length: 0.8
+  Model type: SNP
+  Alpha significance level for model: 0.05
+  Forcing the allowance of sequences of different length.
+
+Loading RAD-Tags...
+Warning: different sequence lengths detected, this could interfere with Stacks algorithms.
+Warning: Input reads contained 36 uncalled nucleotides.
+
+Loaded 53818 reads; formed:
+  4705 stacks representing 46714 primary reads (86.8%)
+  6543 secondary stacks representing 7104 secondary reads (13.2%)
+
+Stack coverage: mean=9.93; stdev=19.80; max=927; n_reads=46714(86.8%)
+Removing repetitive stacks: cov > 70 (mean+3*stdev)...
+  Blacklisted 288 stacks.
+Coverage after repeat removal: mean=8.45; stdev=5.54; max=64; n_reads=37315(69.3%)
+
+Assembling stacks (max. dist. M=2)...
+  Assembled 4417 stacks into 3936; blacklisted 44 stacks.
+Coverage after assembling stacks: mean=8.45; stdev=5.49; max=85; n_reads=32655(60.7%)
+
+Merging secondary stacks (max. dist. N=4 from consensus)...
+  Merged 3227 out of 7104 secondary reads (45.4%), 147 merged with gapped alignments.
+Coverage after merging secondary stacks: mean=9.29; stdev=6.13; max=87; n_reads=35882(66.7%)
+
+Assembling stacks, allowing for gaps (min. match length 80.0%)...
+  Assembled 3936 stacks into 3878 stacks.
+Coverage after gapped assembly: mean=9.43; stdev=6.38; max=87; n_reads=35882(66.7%)
+
+Merging secondary stacks, allowing for gaps (min. match length 80.0%)...
+  Merged 843 out of 3877 secondary reads (21.7%).
+Coverage after merging gapped secondary stacks: mean=9.65; stdev=6.90; max=113; n_reads=36725(68.2%)
+
+Final number of stacks built: 3878
+Final coverage: mean=9.65; stdev=6.90; max=113; n_reads=36725(68.2%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files to './Tma729_allo'...done.
+ustacks is done.
+
+BEGIN cov_per_sample
+# Depths of Coverage for Processed Samples
+sample	loci assembled	depth of cov	max cov	number reads incorporated	% reads incorporated
+Tan254	45137	55.09	1099	2423654	58.3
+Tan3755	59121	45.01	1211	2598860	49.8
+Tan707	51126	45.17	1211	2253673	47.6
+Tan709	52218	44.66	1241	2278061	51.8
+Tan710	61428	43.96	1126	2639457	58.4
+Tan711	121814	26.85	1192	3229506	59.9
+Tar177_N	84256	28.28	821	2327603	59.6
+Tar260_allo	47663	25.36	559	1184832	56.9
+Tar299_N	42961	46.71	859	1960780	57.7
+Tar526_c	50386	35.12	933	1733045	59.5
+Tar528_c	77695	35.94	882	2735132	60.6
+Tar529_N	52915	41.57	702	2153560	61.3
+Tar547_c	50000	29.60	619	1449148	61.0
+Tar552_allo	15631	10.92	169	167447	70.4
+Tar553_allo	6399	9.64	81	60904	75.0
+Tar769_allo	56301	44.11	1166	2432714	52.2
+Tar770_allo	63660	31.84	1007	1988112	53.8
+Tar771_allo	86050	21.86	502	1848387	61.2
+Tjo3765	155339	23.18	1082	3557977	60.6
+Tma068_allo	7323	10.38	117	74555	76.2
+Tma071_allo	9396	10.13	127	93608	70.7
+Tma556_allo	6645	10.36	126	67579	67.3
+Tma559_allo	4200	9.01	102	37050	74.0
+Tma560_allo	6525	10.66	110	68208	72.2
+Tma561_allo	79628	23.13	665	1816940	63.6
+Tma718_allo	13370	10.60	278	139291	65.4
+Tma720_allo	7594	10.72	149	79811	66.9
+Tma729_allo	3878	9.65	113	36725	68.2
+END cov_per_sample
+
+cstacks
+==========
+cstacks -p 24 -M new_popmap_lane2.txt -P .
+
+cstacks parameters selected:
+  Loci matched based on sequence identity.
+  Number of mismatches allowed between stacks: 1
+  Gapped alignments: enabled
+Constructing catalog from 28 samples.
+
+Initializing new catalog...
+  Parsing ./Tan254.tags.tsv.gz
+  Parsing ./Tan254.snps.tsv.gz
+  Parsing ./Tan254.alleles.tsv.gz
+  43995 loci were newly added to the catalog.
+
+Processing sample ./Tan3755 [2 of 28]
+  Parsing ./Tan3755.tags.tsv.gz
+  Parsing ./Tan3755.snps.tsv.gz
+  Parsing ./Tan3755.alleles.tsv.gz
+Searching for sequence matches...
+  43995 loci in the catalog, 3548348 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  5105 loci were matched to a catalog locus.
+  11960 loci were matched to a catalog locus using gapped alignments.
+  40932 loci were newly added to the catalog.
+  229 loci matched more than one catalog locus, linking them.
+    371 linked catalog loci were merged into 148 loci.
+
+Processing sample ./Tan707 [3 of 28]
+  Parsing ./Tan707.tags.tsv.gz
+  Parsing ./Tan707.snps.tsv.gz
+  Parsing ./Tan707.alleles.tsv.gz
+Searching for sequence matches...
+  84704 loci in the catalog, 6421572 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  11151 loci were matched to a catalog locus.
+  16595 loci were matched to a catalog locus using gapped alignments.
+  22550 loci were newly added to the catalog.
+  387 loci matched more than one catalog locus, linking them.
+    724 linked catalog loci were merged into 335 loci.
+
+Processing sample ./Tan709 [4 of 28]
+  Parsing ./Tan709.tags.tsv.gz
+  Parsing ./Tan709.snps.tsv.gz
+  Parsing ./Tan709.alleles.tsv.gz
+Searching for sequence matches...
+  106865 loci in the catalog, 8049294 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  8667 loci were matched to a catalog locus.
+  21251 loci were matched to a catalog locus using gapped alignments.
+  21543 loci were newly added to the catalog.
+  437 loci matched more than one catalog locus, linking them.
+    837 linked catalog loci were merged into 389 loci.
+
+Processing sample ./Tan710 [5 of 28]
+  Parsing ./Tan710.tags.tsv.gz
+  Parsing ./Tan710.snps.tsv.gz
+  Parsing ./Tan710.alleles.tsv.gz
+Searching for sequence matches...
+  127960 loci in the catalog, 9518302 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  7990 loci were matched to a catalog locus.
+  23470 loci were matched to a catalog locus using gapped alignments.
+  29130 loci were newly added to the catalog.
+  526 loci matched more than one catalog locus, linking them.
+    962 linked catalog loci were merged into 441 loci.
+
+Processing sample ./Tan711 [6 of 28]
+  Parsing ./Tan711.tags.tsv.gz
+  Parsing ./Tan711.snps.tsv.gz
+  Parsing ./Tan711.alleles.tsv.gz
+Searching for sequence matches...
+  156569 loci in the catalog, 11627755 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  7801 loci were matched to a catalog locus.
+  23569 loci were matched to a catalog locus using gapped alignments.
+  89307 loci were newly added to the catalog.
+  397 loci matched more than one catalog locus, linking them.
+    734 linked catalog loci were merged into 336 loci.
+
+Processing sample ./Tar177_N [7 of 28]
+  Parsing ./Tar177_N.tags.tsv.gz
+  Parsing ./Tar177_N.snps.tsv.gz
+  Parsing ./Tar177_N.alleles.tsv.gz
+Searching for sequence matches...
+  245478 loci in the catalog, 18527361 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  9292 loci were matched to a catalog locus.
+  24525 loci were matched to a catalog locus using gapped alignments.
+  49156 loci were newly added to the catalog.
+  629 loci matched more than one catalog locus, linking them.
+    1223 linked catalog loci were merged into 573 loci.
+
+Processing sample ./Tar299_N [8 of 28]
+  Parsing ./Tar299_N.tags.tsv.gz
+  Parsing ./Tar299_N.snps.tsv.gz
+  Parsing ./Tar299_N.alleles.tsv.gz
+Searching for sequence matches...
+  293984 loci in the catalog, 22304495 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  6994 loci were matched to a catalog locus.
+  21967 loci were matched to a catalog locus using gapped alignments.
+  13456 loci were newly added to the catalog.
+  426 loci matched more than one catalog locus, linking them.
+    831 linked catalog loci were merged into 394 loci.
+
+Processing sample ./Tar529_N [9 of 28]
+  Parsing ./Tar529_N.tags.tsv.gz
+  Parsing ./Tar529_N.snps.tsv.gz
+  Parsing ./Tar529_N.alleles.tsv.gz
+Searching for sequence matches...
+  307003 loci in the catalog, 23200633 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  9192 loci were matched to a catalog locus.
+  24715 loci were matched to a catalog locus using gapped alignments.
+  18404 loci were newly added to the catalog.
+  485 loci matched more than one catalog locus, linking them.
+    921 linked catalog loci were merged into 431 loci.
+
+Processing sample ./Tar260_allo [10 of 28]
+  Parsing ./Tar260_allo.tags.tsv.gz
+  Parsing ./Tar260_allo.snps.tsv.gz
+  Parsing ./Tar260_allo.alleles.tsv.gz
+Searching for sequence matches...
+  324917 loci in the catalog, 24457285 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  9991 loci were matched to a catalog locus.
+  21438 loci were matched to a catalog locus using gapped alignments.
+  15720 loci were newly added to the catalog.
+  406 loci matched more than one catalog locus, linking them.
+    789 linked catalog loci were merged into 375 loci.
+
+Processing sample ./Tar552_allo [11 of 28]
+  Parsing ./Tar552_allo.tags.tsv.gz
+  Parsing ./Tar552_allo.snps.tsv.gz
+  Parsing ./Tar552_allo.alleles.tsv.gz
+Searching for sequence matches...
+  340223 loci in the catalog, 26054846 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  1005 loci were matched to a catalog locus.
+  9783 loci were matched to a catalog locus using gapped alignments.
+  4750 loci were newly added to the catalog.
+  196 loci matched more than one catalog locus, linking them.
+    383 linked catalog loci were merged into 178 loci.
+
+Processing sample ./Tar553_allo [12 of 28]
+  Parsing ./Tar553_allo.tags.tsv.gz
+  Parsing ./Tar553_allo.snps.tsv.gz
+  Parsing ./Tar553_allo.alleles.tsv.gz
+Searching for sequence matches...
+  344768 loci in the catalog, 26403868 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  588 loci were matched to a catalog locus.
+  2404 loci were matched to a catalog locus using gapped alignments.
+  3365 loci were newly added to the catalog.
+  39 loci matched more than one catalog locus, linking them.
+    78 linked catalog loci were merged into 38 loci.
+
+Processing sample ./Tar769_allo [13 of 28]
+  Parsing ./Tar769_allo.tags.tsv.gz
+  Parsing ./Tar769_allo.snps.tsv.gz
+  Parsing ./Tar769_allo.alleles.tsv.gz
+Searching for sequence matches...
+  348093 loci in the catalog, 26039799 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  7568 loci were matched to a catalog locus.
+  22342 loci were matched to a catalog locus using gapped alignments.
+  25694 loci were newly added to the catalog.
+  430 loci matched more than one catalog locus, linking them.
+    826 linked catalog loci were merged into 383 loci.
+
+Processing sample ./Tar770_allo [14 of 28]
+  Parsing ./Tar770_allo.tags.tsv.gz
+  Parsing ./Tar770_allo.snps.tsv.gz
+  Parsing ./Tar770_allo.alleles.tsv.gz
+Searching for sequence matches...
+  373344 loci in the catalog, 27808125 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  8797 loci were matched to a catalog locus.
+  26461 loci were matched to a catalog locus using gapped alignments.
+  27759 loci were newly added to the catalog.
+  552 loci matched more than one catalog locus, linking them.
+    1044 linked catalog loci were merged into 482 loci.
+
+Processing sample ./Tar771_allo [15 of 28]
+  Parsing ./Tar771_allo.tags.tsv.gz
+  Parsing ./Tar771_allo.snps.tsv.gz
+  Parsing ./Tar771_allo.alleles.tsv.gz
+Searching for sequence matches...
+  400541 loci in the catalog, 29624112 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  14261 loci were matched to a catalog locus.
+  29723 loci were matched to a catalog locus using gapped alignments.
+  41284 loci were newly added to the catalog.
+  713 loci matched more than one catalog locus, linking them.
+    1400 linked catalog loci were merged into 674 loci.
+
+Processing sample ./Tar526_c [16 of 28]
+  Parsing ./Tar526_c.tags.tsv.gz
+  Parsing ./Tar526_c.snps.tsv.gz
+  Parsing ./Tar526_c.alleles.tsv.gz
+Searching for sequence matches...
+  441099 loci in the catalog, 32421192 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  9007 loci were matched to a catalog locus.
+  26574 loci were matched to a catalog locus using gapped alignments.
+  14269 loci were newly added to the catalog.
+  490 loci matched more than one catalog locus, linking them.
+    952 linked catalog loci were merged into 450 loci.
+
+Processing sample ./Tar528_c [17 of 28]
+  Parsing ./Tar528_c.tags.tsv.gz
+  Parsing ./Tar528_c.snps.tsv.gz
+  Parsing ./Tar528_c.alleles.tsv.gz
+Searching for sequence matches...
+  454866 loci in the catalog, 33322162 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  13398 loci were matched to a catalog locus.
+  34372 loci were matched to a catalog locus using gapped alignments.
+  29078 loci were newly added to the catalog.
+  714 loci matched more than one catalog locus, linking them.
+    1388 linked catalog loci were merged into 649 loci.
+
+Processing sample ./Tar547_c [18 of 28]
+  Parsing ./Tar547_c.tags.tsv.gz
+  Parsing ./Tar547_c.snps.tsv.gz
+  Parsing ./Tar547_c.alleles.tsv.gz
+Searching for sequence matches...
+  483205 loci in the catalog, 35285776 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  8059 loci were matched to a catalog locus.
+  27972 loci were matched to a catalog locus using gapped alignments.
+  13502 loci were newly added to the catalog.
+  554 loci matched more than one catalog locus, linking them.
+    1084 linked catalog loci were merged into 513 loci.
+
+Processing sample ./Tjo3765 [19 of 28]
+  Parsing ./Tjo3765.tags.tsv.gz
+  Parsing ./Tjo3765.snps.tsv.gz
+  Parsing ./Tjo3765.alleles.tsv.gz
+Searching for sequence matches...
+  496136 loci in the catalog, 36099449 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  17358 loci were matched to a catalog locus.
+  34221 loci were matched to a catalog locus using gapped alignments.
+  102650 loci were newly added to the catalog.
+  686 loci matched more than one catalog locus, linking them.
+    1329 linked catalog loci were merged into 626 loci.
+
+Processing sample ./Tma068_allo [20 of 28]
+  Parsing ./Tma068_allo.tags.tsv.gz
+  Parsing ./Tma068_allo.snps.tsv.gz
+  Parsing ./Tma068_allo.alleles.tsv.gz
+Searching for sequence matches...
+  598083 loci in the catalog, 43293480 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  557 loci were matched to a catalog locus.
+  4392 loci were matched to a catalog locus using gapped alignments.
+  2309 loci were newly added to the catalog.
+  69 loci matched more than one catalog locus, linking them.
+    137 linked catalog loci were merged into 65 loci.
+
+Processing sample ./Tma071_allo [21 of 28]
+  Parsing ./Tma071_allo.tags.tsv.gz
+  Parsing ./Tma071_allo.snps.tsv.gz
+  Parsing ./Tma071_allo.alleles.tsv.gz
+Searching for sequence matches...
+  600320 loci in the catalog, 45593811 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  161 loci were matched to a catalog locus.
+  6001 loci were matched to a catalog locus using gapped alignments.
+  3202 loci were newly added to the catalog.
+  119 loci matched more than one catalog locus, linking them.
+    238 linked catalog loci were merged into 113 loci.
+
+Processing sample ./Tma556_allo [22 of 28]
+  Parsing ./Tma556_allo.tags.tsv.gz
+  Parsing ./Tma556_allo.snps.tsv.gz
+  Parsing ./Tma556_allo.alleles.tsv.gz
+Searching for sequence matches...
+  603397 loci in the catalog, 47449069 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  526 loci were matched to a catalog locus.
+  4764 loci were matched to a catalog locus using gapped alignments.
+  1335 loci were newly added to the catalog.
+  93 loci matched more than one catalog locus, linking them.
+    188 linked catalog loci were merged into 84 loci.
+
+Processing sample ./Tma559_allo [23 of 28]
+  Parsing ./Tma559_allo.tags.tsv.gz
+  Parsing ./Tma559_allo.snps.tsv.gz
+  Parsing ./Tma559_allo.alleles.tsv.gz
+Searching for sequence matches...
+  604628 loci in the catalog, 45033642 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  107 loci were matched to a catalog locus.
+  3021 loci were matched to a catalog locus using gapped alignments.
+  1038 loci were newly added to the catalog.
+  44 loci matched more than one catalog locus, linking them.
+    94 linked catalog loci were merged into 40 loci.
+
+Processing sample ./Tma560_allo [24 of 28]
+  Parsing ./Tma560_allo.tags.tsv.gz
+  Parsing ./Tma560_allo.snps.tsv.gz
+  Parsing ./Tma560_allo.alleles.tsv.gz
+Searching for sequence matches...
+  605612 loci in the catalog, 43776892 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  574 loci were matched to a catalog locus.
+  4530 loci were matched to a catalog locus using gapped alignments.
+  1376 loci were newly added to the catalog.
+  74 loci matched more than one catalog locus, linking them.
+    147 linked catalog loci were merged into 67 loci.
+
+Processing sample ./Tma561_allo [25 of 28]
+  Parsing ./Tma561_allo.tags.tsv.gz
+  Parsing ./Tma561_allo.snps.tsv.gz
+  Parsing ./Tma561_allo.alleles.tsv.gz
+Searching for sequence matches...
+  606908 loci in the catalog, 43863766 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  9836 loci were matched to a catalog locus.
+  31776 loci were matched to a catalog locus using gapped alignments.
+  37597 loci were newly added to the catalog.
+  612 loci matched more than one catalog locus, linking them.
+    1202 linked catalog loci were merged into 572 loci.
+
+Processing sample ./Tma718_allo [26 of 28]
+  Parsing ./Tma718_allo.tags.tsv.gz
+  Parsing ./Tma718_allo.snps.tsv.gz
+  Parsing ./Tma718_allo.alleles.tsv.gz
+Searching for sequence matches...
+  643875 loci in the catalog, 50686907 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  293 loci were matched to a catalog locus.
+  9585 loci were matched to a catalog locus using gapped alignments.
+  3439 loci were newly added to the catalog.
+  165 loci matched more than one catalog locus, linking them.
+    337 linked catalog loci were merged into 161 loci.
+
+Processing sample ./Tma720_allo [27 of 28]
+  Parsing ./Tma720_allo.tags.tsv.gz
+  Parsing ./Tma720_allo.snps.tsv.gz
+  Parsing ./Tma720_allo.alleles.tsv.gz
+Searching for sequence matches...
+  647138 loci in the catalog, 49056040 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  512 loci were matched to a catalog locus.
+  4667 loci were matched to a catalog locus using gapped alignments.
+  2356 loci were newly added to the catalog.
+  82 loci matched more than one catalog locus, linking them.
+    169 linked catalog loci were merged into 80 loci.
+
+Processing sample ./Tma729_allo [28 of 28]
+  Parsing ./Tma729_allo.tags.tsv.gz
+  Parsing ./Tma729_allo.snps.tsv.gz
+  Parsing ./Tma729_allo.alleles.tsv.gz
+Searching for sequence matches...
+  649405 loci in the catalog, 48321633 kmers in the catalog hash.
+Searching for gapped alignments...
+Merging matches into catalog...
+  390 loci were matched to a catalog locus.
+  2187 loci were matched to a catalog locus using gapped alignments.
+  1276 loci were newly added to the catalog.
+  40 loci matched more than one catalog locus, linking them.
+    88 linked catalog loci were merged into 40 loci.
+
+Writing catalog in directory './'.
+Final catalog contains 650633 loci.
+cstacks is done.
+
+sstacks
+==========
+sstacks -P . -p 24 -M new_popmap_lane2.txt
+
+Searching for matches by sequence identity...
+  Parsing ./catalog.tags.tsv.gz
+  Parsing ./catalog.snps.tsv.gz
+  Parsing ./catalog.alleles.tsv.gz
+Populating kmer dictionary for exact matches...done.
+Populating kmer dictionary for gapped alignments...done.
+
+Processing sample './Tan254' [1 of 28]
+  Parsing ./Tan254.tags.tsv.gz
+  Parsing ./Tan254.snps.tsv.gz
+  Parsing ./Tan254.alleles.tsv.gz
+Searching for sequence matches...
+43995 sample loci compared against the catalog containing 650633 loci.
+  17114 matching loci, 156 contained no verified haplotypes.
+  7 loci matched more than one catalog locus and were excluded.
+  150 loci contained SNPs unaccounted for in the catalog and were excluded.
+  17725 total haplotypes examined from matching loci, 17560 verified.
+Searching for gapped alignments...
+Out of 43995 query loci, 27038 gapped alignments attempted.
+  24716 loci matched one catalog locus; 32905 total haplotypes examined, 29147 verified.
+  2322 loci matched no catalog locus;
+    650 loci matched more than one catalog locus and were excluded.
+    232 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tan254.matches.tsv.gz
+
+Processing sample './Tan3755' [2 of 28]
+  Parsing ./Tan3755.tags.tsv.gz
+  Parsing ./Tan3755.snps.tsv.gz
+  Parsing ./Tan3755.alleles.tsv.gz
+Searching for sequence matches...
+57746 sample loci compared against the catalog containing 650633 loci.
+  29449 matching loci, 123 contained no verified haplotypes.
+  14 loci matched more than one catalog locus and were excluded.
+  109 loci contained SNPs unaccounted for in the catalog and were excluded.
+  30914 total haplotypes examined from matching loci, 30785 verified.
+Searching for gapped alignments...
+Out of 57746 query loci, 28420 gapped alignments attempted.
+  25426 loci matched one catalog locus; 34775 total haplotypes examined, 30032 verified.
+  2994 loci matched no catalog locus;
+    459 loci matched more than one catalog locus and were excluded.
+    266 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tan3755.matches.tsv.gz
+
+Processing sample './Tan707' [3 of 28]
+  Parsing ./Tan707.tags.tsv.gz
+  Parsing ./Tan707.snps.tsv.gz
+  Parsing ./Tan707.alleles.tsv.gz
+Searching for sequence matches...
+49894 sample loci compared against the catalog containing 650633 loci.
+  23593 matching loci, 111 contained no verified haplotypes.
+  11 loci matched more than one catalog locus and were excluded.
+  100 loci contained SNPs unaccounted for in the catalog and were excluded.
+  24686 total haplotypes examined from matching loci, 24570 verified.
+Searching for gapped alignments...
+Out of 49894 query loci, 26412 gapped alignments attempted.
+  23749 loci matched one catalog locus; 32131 total haplotypes examined, 27899 verified.
+  2663 loci matched no catalog locus;
+    509 loci matched more than one catalog locus and were excluded.
+    267 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tan707.matches.tsv.gz
+
+Processing sample './Tan709' [4 of 28]
+  Parsing ./Tan709.tags.tsv.gz
+  Parsing ./Tan709.snps.tsv.gz
+  Parsing ./Tan709.alleles.tsv.gz
+Searching for sequence matches...
+51007 sample loci compared against the catalog containing 650633 loci.
+  21925 matching loci, 120 contained no verified haplotypes.
+  12 loci matched more than one catalog locus and were excluded.
+  108 loci contained SNPs unaccounted for in the catalog and were excluded.
+  23237 total haplotypes examined from matching loci, 23108 verified.
+Searching for gapped alignments...
+Out of 51007 query loci, 29202 gapped alignments attempted.
+  26226 loci matched one catalog locus; 36223 total haplotypes examined, 31526 verified.
+  2976 loci matched no catalog locus;
+    547 loci matched more than one catalog locus and were excluded.
+    259 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tan709.matches.tsv.gz
+
+Processing sample './Tan710' [5 of 28]
+  Parsing ./Tan710.tags.tsv.gz
+  Parsing ./Tan710.snps.tsv.gz
+  Parsing ./Tan710.alleles.tsv.gz
+Searching for sequence matches...
+60049 sample loci compared against the catalog containing 650633 loci.
+  28792 matching loci, 147 contained no verified haplotypes.
+  4 loci matched more than one catalog locus and were excluded.
+  143 loci contained SNPs unaccounted for in the catalog and were excluded.
+  29921 total haplotypes examined from matching loci, 29765 verified.
+Searching for gapped alignments...
+Out of 60049 query loci, 31404 gapped alignments attempted.
+  28235 loci matched one catalog locus; 38061 total haplotypes examined, 33028 verified.
+  3169 loci matched no catalog locus;
+    639 loci matched more than one catalog locus and were excluded.
+    318 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tan710.matches.tsv.gz
+
+Processing sample './Tan711' [6 of 28]
+  Parsing ./Tan711.tags.tsv.gz
+  Parsing ./Tan711.snps.tsv.gz
+  Parsing ./Tan711.alleles.tsv.gz
+Searching for sequence matches...
+120269 sample loci compared against the catalog containing 650633 loci.
+  85273 matching loci, 137 contained no verified haplotypes.
+  14 loci matched more than one catalog locus and were excluded.
+  123 loci contained SNPs unaccounted for in the catalog and were excluded.
+  88976 total haplotypes examined from matching loci, 88831 verified.
+Searching for gapped alignments...
+Out of 120269 query loci, 35133 gapped alignments attempted.
+  31878 loci matched one catalog locus; 42682 total haplotypes examined, 37600 verified.
+  3255 loci matched no catalog locus;
+    589 loci matched more than one catalog locus and were excluded.
+    310 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tan711.matches.tsv.gz
+
+Processing sample './Tar177_N' [7 of 28]
+  Parsing ./Tar177_N.tags.tsv.gz
+  Parsing ./Tar177_N.snps.tsv.gz
+  Parsing ./Tar177_N.alleles.tsv.gz
+Searching for sequence matches...
+82314 sample loci compared against the catalog containing 650633 loci.
+  51139 matching loci, 180 contained no verified haplotypes.
+  7 loci matched more than one catalog locus and were excluded.
+  173 loci contained SNPs unaccounted for in the catalog and were excluded.
+  53218 total haplotypes examined from matching loci, 53017 verified.
+Searching for gapped alignments...
+Out of 82314 query loci, 31355 gapped alignments attempted.
+  28594 loci matched one catalog locus; 41266 total haplotypes examined, 36484 verified.
+  2761 loci matched no catalog locus;
+    873 loci matched more than one catalog locus and were excluded.
+    309 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tar177_N.matches.tsv.gz
+
+Processing sample './Tar299_N' [8 of 28]
+  Parsing ./Tar299_N.tags.tsv.gz
+  Parsing ./Tar299_N.snps.tsv.gz
+  Parsing ./Tar299_N.alleles.tsv.gz
+Searching for sequence matches...
+41977 sample loci compared against the catalog containing 650633 loci.
+  16007 matching loci, 112 contained no verified haplotypes.
+  4 loci matched more than one catalog locus and were excluded.
+  108 loci contained SNPs unaccounted for in the catalog and were excluded.
+  16630 total haplotypes examined from matching loci, 16515 verified.
+Searching for gapped alignments...
+Out of 41977 query loci, 26082 gapped alignments attempted.
+  23940 loci matched one catalog locus; 32084 total haplotypes examined, 28651 verified.
+  2142 loci matched no catalog locus;
+    734 loci matched more than one catalog locus and were excluded.
+    202 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tar299_N.matches.tsv.gz
+
+Processing sample './Tar529_N' [9 of 28]
+  Parsing ./Tar529_N.tags.tsv.gz
+  Parsing ./Tar529_N.snps.tsv.gz
+  Parsing ./Tar529_N.alleles.tsv.gz
+Searching for sequence matches...
+51807 sample loci compared against the catalog containing 650633 loci.
+  22782 matching loci, 135 contained no verified haplotypes.
+  10 loci matched more than one catalog locus and were excluded.
+  125 loci contained SNPs unaccounted for in the catalog and were excluded.
+  23783 total haplotypes examined from matching loci, 23635 verified.
+Searching for gapped alignments...
+Out of 51807 query loci, 29160 gapped alignments attempted.
+  26685 loci matched one catalog locus; 35546 total haplotypes examined, 31601 verified.
+  2475 loci matched no catalog locus;
+    718 loci matched more than one catalog locus and were excluded.
+    237 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tar529_N.matches.tsv.gz
+
+Processing sample './Tar260_allo' [10 of 28]
+  Parsing ./Tar260_allo.tags.tsv.gz
+  Parsing ./Tar260_allo.snps.tsv.gz
+  Parsing ./Tar260_allo.alleles.tsv.gz
+Searching for sequence matches...
+46727 sample loci compared against the catalog containing 650633 loci.
+  20740 matching loci, 114 contained no verified haplotypes.
+  4 loci matched more than one catalog locus and were excluded.
+  111 loci contained SNPs unaccounted for in the catalog and were excluded.
+  21662 total haplotypes examined from matching loci, 21542 verified.
+Searching for gapped alignments...
+Out of 46727 query loci, 26102 gapped alignments attempted.
+  23985 loci matched one catalog locus; 31606 total haplotypes examined, 28245 verified.
+  2117 loci matched no catalog locus;
+    614 loci matched more than one catalog locus and were excluded.
+    221 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tar260_allo.matches.tsv.gz
+
+Processing sample './Tar552_allo' [11 of 28]
+  Parsing ./Tar552_allo.tags.tsv.gz
+  Parsing ./Tar552_allo.snps.tsv.gz
+  Parsing ./Tar552_allo.alleles.tsv.gz
+Searching for sequence matches...
+15331 sample loci compared against the catalog containing 650633 loci.
+  5051 matching loci, 12 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  12 loci contained SNPs unaccounted for in the catalog and were excluded.
+  5183 total haplotypes examined from matching loci, 5170 verified.
+Searching for gapped alignments...
+Out of 15331 query loci, 10292 gapped alignments attempted.
+  9427 loci matched one catalog locus; 11419 total haplotypes examined, 10129 verified.
+  865 loci matched no catalog locus;
+    176 loci matched more than one catalog locus and were excluded.
+    78 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tar552_allo.matches.tsv.gz
+
+Processing sample './Tar553_allo' [12 of 28]
+  Parsing ./Tar553_allo.tags.tsv.gz
+  Parsing ./Tar553_allo.snps.tsv.gz
+  Parsing ./Tar553_allo.alleles.tsv.gz
+Searching for sequence matches...
+6317 sample loci compared against the catalog containing 650633 loci.
+  3569 matching loci, 8 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  8 loci contained SNPs unaccounted for in the catalog and were excluded.
+  3622 total haplotypes examined from matching loci, 3613 verified.
+Searching for gapped alignments...
+Out of 6317 query loci, 2756 gapped alignments attempted.
+  2478 loci matched one catalog locus; 2964 total haplotypes examined, 2568 verified.
+  278 loci matched no catalog locus;
+    73 loci matched more than one catalog locus and were excluded.
+    25 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tar553_allo.matches.tsv.gz
+
+Processing sample './Tar769_allo' [13 of 28]
+  Parsing ./Tar769_allo.tags.tsv.gz
+  Parsing ./Tar769_allo.snps.tsv.gz
+  Parsing ./Tar769_allo.alleles.tsv.gz
+Searching for sequence matches...
+55153 sample loci compared against the catalog containing 650633 loci.
+  29256 matching loci, 93 contained no verified haplotypes.
+  2 loci matched more than one catalog locus and were excluded.
+  91 loci contained SNPs unaccounted for in the catalog and were excluded.
+  30610 total haplotypes examined from matching loci, 30513 verified.
+Searching for gapped alignments...
+Out of 55153 query loci, 25990 gapped alignments attempted.
+  23861 loci matched one catalog locus; 32139 total haplotypes examined, 28640 verified.
+  2129 loci matched no catalog locus;
+    614 loci matched more than one catalog locus and were excluded.
+    196 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tar769_allo.matches.tsv.gz
+
+Processing sample './Tar770_allo' [14 of 28]
+  Parsing ./Tar770_allo.tags.tsv.gz
+  Parsing ./Tar770_allo.snps.tsv.gz
+  Parsing ./Tar770_allo.alleles.tsv.gz
+Searching for sequence matches...
+62444 sample loci compared against the catalog containing 650633 loci.
+  32517 matching loci, 103 contained no verified haplotypes.
+  4 loci matched more than one catalog locus and were excluded.
+  99 loci contained SNPs unaccounted for in the catalog and were excluded.
+  33936 total haplotypes examined from matching loci, 33829 verified.
+Searching for gapped alignments...
+Out of 62444 query loci, 30030 gapped alignments attempted.
+  27673 loci matched one catalog locus; 36981 total haplotypes examined, 33105 verified.
+  2357 loci matched no catalog locus;
+    617 loci matched more than one catalog locus and were excluded.
+    226 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tar770_allo.matches.tsv.gz
+
+Processing sample './Tar771_allo' [15 of 28]
+  Parsing ./Tar771_allo.tags.tsv.gz
+  Parsing ./Tar771_allo.snps.tsv.gz
+  Parsing ./Tar771_allo.alleles.tsv.gz
+Searching for sequence matches...
+84540 sample loci compared against the catalog containing 650633 loci.
+  50929 matching loci, 116 contained no verified haplotypes.
+  4 loci matched more than one catalog locus and were excluded.
+  112 loci contained SNPs unaccounted for in the catalog and were excluded.
+  52780 total haplotypes examined from matching loci, 52657 verified.
+Searching for gapped alignments...
+Out of 84540 query loci, 33727 gapped alignments attempted.
+  31540 loci matched one catalog locus; 41991 total haplotypes examined, 38394 verified.
+  2187 loci matched no catalog locus;
+    732 loci matched more than one catalog locus and were excluded.
+    225 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tar771_allo.matches.tsv.gz
+
+Processing sample './Tar526_c' [16 of 28]
+  Parsing ./Tar526_c.tags.tsv.gz
+  Parsing ./Tar526_c.snps.tsv.gz
+  Parsing ./Tar526_c.alleles.tsv.gz
+Searching for sequence matches...
+49345 sample loci compared against the catalog containing 650633 loci.
+  20507 matching loci, 78 contained no verified haplotypes.
+  2 loci matched more than one catalog locus and were excluded.
+  77 loci contained SNPs unaccounted for in the catalog and were excluded.
+  21491 total haplotypes examined from matching loci, 21410 verified.
+Searching for gapped alignments...
+Out of 49345 query loci, 28917 gapped alignments attempted.
+  26975 loci matched one catalog locus; 35314 total haplotypes examined, 32212 verified.
+  1942 loci matched no catalog locus;
+    616 loci matched more than one catalog locus and were excluded.
+    151 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tar526_c.matches.tsv.gz
+
+Processing sample './Tar528_c' [17 of 28]
+  Parsing ./Tar528_c.tags.tsv.gz
+  Parsing ./Tar528_c.snps.tsv.gz
+  Parsing ./Tar528_c.alleles.tsv.gz
+Searching for sequence matches...
+76100 sample loci compared against the catalog containing 650633 loci.
+  40580 matching loci, 68 contained no verified haplotypes.
+  5 loci matched more than one catalog locus and were excluded.
+  63 loci contained SNPs unaccounted for in the catalog and were excluded.
+  42621 total haplotypes examined from matching loci, 42546 verified.
+Searching for gapped alignments...
+Out of 76100 query loci, 35588 gapped alignments attempted.
+  33472 loci matched one catalog locus; 43012 total haplotypes examined, 39577 verified.
+  2116 loci matched no catalog locus;
+    623 loci matched more than one catalog locus and were excluded.
+    175 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tar528_c.matches.tsv.gz
+
+Processing sample './Tar547_c' [18 of 28]
+  Parsing ./Tar547_c.tags.tsv.gz
+  Parsing ./Tar547_c.snps.tsv.gz
+  Parsing ./Tar547_c.alleles.tsv.gz
+Searching for sequence matches...
+48955 sample loci compared against the catalog containing 650633 loci.
+  20344 matching loci, 50 contained no verified haplotypes.
+  6 loci matched more than one catalog locus and were excluded.
+  44 loci contained SNPs unaccounted for in the catalog and were excluded.
+  21416 total haplotypes examined from matching loci, 21362 verified.
+Searching for gapped alignments...
+Out of 48955 query loci, 28661 gapped alignments attempted.
+  27081 loci matched one catalog locus; 35354 total haplotypes examined, 32785 verified.
+  1580 loci matched no catalog locus;
+    559 loci matched more than one catalog locus and were excluded.
+    122 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tar547_c.matches.tsv.gz
+
+Processing sample './Tjo3765' [19 of 28]
+  Parsing ./Tjo3765.tags.tsv.gz
+  Parsing ./Tjo3765.snps.tsv.gz
+  Parsing ./Tjo3765.alleles.tsv.gz
+Searching for sequence matches...
+153514 sample loci compared against the catalog containing 650633 loci.
+  120062 matching loci, 37 contained no verified haplotypes.
+  3 loci matched more than one catalog locus and were excluded.
+  34 loci contained SNPs unaccounted for in the catalog and were excluded.
+  126333 total haplotypes examined from matching loci, 126295 verified.
+Searching for gapped alignments...
+Out of 153514 query loci, 33489 gapped alignments attempted.
+  31804 loci matched one catalog locus; 41140 total haplotypes examined, 38376 verified.
+  1685 loci matched no catalog locus;
+    496 loci matched more than one catalog locus and were excluded.
+    134 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tjo3765.matches.tsv.gz
+
+Processing sample './Tma068_allo' [20 of 28]
+  Parsing ./Tma068_allo.tags.tsv.gz
+  Parsing ./Tma068_allo.snps.tsv.gz
+  Parsing ./Tma068_allo.alleles.tsv.gz
+Searching for sequence matches...
+7186 sample loci compared against the catalog containing 650633 loci.
+  2694 matching loci, 10 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  10 loci contained SNPs unaccounted for in the catalog and were excluded.
+  2763 total haplotypes examined from matching loci, 2752 verified.
+Searching for gapped alignments...
+Out of 7186 query loci, 4502 gapped alignments attempted.
+  4215 loci matched one catalog locus; 4854 total haplotypes examined, 4431 verified.
+  287 loci matched no catalog locus;
+    85 loci matched more than one catalog locus and were excluded.
+    17 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tma068_allo.matches.tsv.gz
+
+Processing sample './Tma071_allo' [21 of 28]
+  Parsing ./Tma071_allo.tags.tsv.gz
+  Parsing ./Tma071_allo.snps.tsv.gz
+  Parsing ./Tma071_allo.alleles.tsv.gz
+Searching for sequence matches...
+9239 sample loci compared against the catalog containing 650633 loci.
+  3209 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  3265 total haplotypes examined from matching loci, 3265 verified.
+Searching for gapped alignments...
+Out of 9239 query loci, 6030 gapped alignments attempted.
+  5793 loci matched one catalog locus; 6553 total haplotypes examined, 6158 verified.
+  237 loci matched no catalog locus;
+    51 loci matched more than one catalog locus and were excluded.
+    17 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tma071_allo.matches.tsv.gz
+
+Processing sample './Tma556_allo' [22 of 28]
+  Parsing ./Tma556_allo.tags.tsv.gz
+  Parsing ./Tma556_allo.snps.tsv.gz
+  Parsing ./Tma556_allo.alleles.tsv.gz
+Searching for sequence matches...
+6521 sample loci compared against the catalog containing 650633 loci.
+  1732 matching loci, 5 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  5 loci contained SNPs unaccounted for in the catalog and were excluded.
+  1781 total haplotypes examined from matching loci, 1776 verified.
+Searching for gapped alignments...
+Out of 6521 query loci, 4794 gapped alignments attempted.
+  4527 loci matched one catalog locus; 5244 total haplotypes examined, 4798 verified.
+  267 loci matched no catalog locus;
+    65 loci matched more than one catalog locus and were excluded.
+    21 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tma556_allo.matches.tsv.gz
+
+Processing sample './Tma559_allo' [23 of 28]
+  Parsing ./Tma559_allo.tags.tsv.gz
+  Parsing ./Tma559_allo.snps.tsv.gz
+  Parsing ./Tma559_allo.alleles.tsv.gz
+Searching for sequence matches...
+4112 sample loci compared against the catalog containing 650633 loci.
+  1090 matching loci, 1 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  1 loci contained SNPs unaccounted for in the catalog and were excluded.
+  1109 total haplotypes examined from matching loci, 1108 verified.
+Searching for gapped alignments...
+Out of 4112 query loci, 3023 gapped alignments attempted.
+  2881 loci matched one catalog locus; 3302 total haplotypes examined, 3055 verified.
+  142 loci matched no catalog locus;
+    17 loci matched more than one catalog locus and were excluded.
+    10 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tma559_allo.matches.tsv.gz
+
+Processing sample './Tma560_allo' [24 of 28]
+  Parsing ./Tma560_allo.tags.tsv.gz
+  Parsing ./Tma560_allo.snps.tsv.gz
+  Parsing ./Tma560_allo.alleles.tsv.gz
+Searching for sequence matches...
+6399 sample loci compared against the catalog containing 650633 loci.
+  1834 matching loci, 8 contained no verified haplotypes.
+  1 loci matched more than one catalog locus and were excluded.
+  7 loci contained SNPs unaccounted for in the catalog and were excluded.
+  1869 total haplotypes examined from matching loci, 1861 verified.
+Searching for gapped alignments...
+Out of 6399 query loci, 4573 gapped alignments attempted.
+  4319 loci matched one catalog locus; 4931 total haplotypes examined, 4550 verified.
+  254 loci matched no catalog locus;
+    95 loci matched more than one catalog locus and were excluded.
+    20 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tma560_allo.matches.tsv.gz
+
+Processing sample './Tma561_allo' [25 of 28]
+  Parsing ./Tma561_allo.tags.tsv.gz
+  Parsing ./Tma561_allo.snps.tsv.gz
+  Parsing ./Tma561_allo.alleles.tsv.gz
+Searching for sequence matches...
+78568 sample loci compared against the catalog containing 650633 loci.
+  47980 matching loci, 6 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  6 loci contained SNPs unaccounted for in the catalog and were excluded.
+  50249 total haplotypes examined from matching loci, 50243 verified.
+Searching for gapped alignments...
+Out of 78568 query loci, 30594 gapped alignments attempted.
+  29566 loci matched one catalog locus; 36658 total haplotypes examined, 35041 verified.
+  1028 loci matched no catalog locus;
+    451 loci matched more than one catalog locus and were excluded.
+    43 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tma561_allo.matches.tsv.gz
+
+Processing sample './Tma718_allo' [26 of 28]
+  Parsing ./Tma718_allo.tags.tsv.gz
+  Parsing ./Tma718_allo.snps.tsv.gz
+  Parsing ./Tma718_allo.alleles.tsv.gz
+Searching for sequence matches...
+13141 sample loci compared against the catalog containing 650633 loci.
+  3742 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  3862 total haplotypes examined from matching loci, 3862 verified.
+Searching for gapped alignments...
+Out of 13141 query loci, 9399 gapped alignments attempted.
+  9182 loci matched one catalog locus; 10348 total haplotypes examined, 10005 verified.
+  217 loci matched no catalog locus;
+    99 loci matched more than one catalog locus and were excluded.
+    10 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tma718_allo.matches.tsv.gz
+
+Processing sample './Tma720_allo' [27 of 28]
+  Parsing ./Tma720_allo.tags.tsv.gz
+  Parsing ./Tma720_allo.snps.tsv.gz
+  Parsing ./Tma720_allo.alleles.tsv.gz
+Searching for sequence matches...
+7446 sample loci compared against the catalog containing 650633 loci.
+  2894 matching loci, 2 contained no verified haplotypes.
+  1 loci matched more than one catalog locus and were excluded.
+  1 loci contained SNPs unaccounted for in the catalog and were excluded.
+  2999 total haplotypes examined from matching loci, 2997 verified.
+Searching for gapped alignments...
+Out of 7446 query loci, 4554 gapped alignments attempted.
+  4441 loci matched one catalog locus; 5000 total haplotypes examined, 4808 verified.
+  113 loci matched no catalog locus;
+    57 loci matched more than one catalog locus and were excluded.
+    6 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tma720_allo.matches.tsv.gz
+
+Processing sample './Tma729_allo' [28 of 28]
+  Parsing ./Tma729_allo.tags.tsv.gz
+  Parsing ./Tma729_allo.snps.tsv.gz
+  Parsing ./Tma729_allo.alleles.tsv.gz
+Searching for sequence matches...
+3805 sample loci compared against the catalog containing 650633 loci.
+  1676 matching loci, 1 contained no verified haplotypes.
+  1 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  1761 total haplotypes examined from matching loci, 1760 verified.
+Searching for gapped alignments...
+Out of 3805 query loci, 2130 gapped alignments attempted.
+  2072 loci matched one catalog locus; 2254 total haplotypes examined, 2177 verified.
+  58 loci matched no catalog locus;
+    48 loci matched more than one catalog locus and were excluded.
+    0 loci contained SNPs unaccounted for in the catalog and were excluded.
+    0 loci had no verified haplotypes.
+    0 loci had inconsistent alignments to a catalog locus and were excluded.
+Outputing to file ./Tma729_allo.matches.tsv.gz
+
+sstacks is done.
+
+tsv2bam
+==========
+tsv2bam -P .  -t 24 -M new_popmap_lane2.txt
+
+Logging to './tsv2bam.log'.
+Configuration for this run:
+  Stacks directory: './'
+  Population map: 'new_popmap_lane2.txt'
+  Num. samples: 28
+  Multithreaded.
+
+Loading the catalog...
+Processing sample 'Tan254'...
+Processing sample 'Tar770_allo'...
+Processing sample 'Tar769_allo'...
+Processing sample 'Tar553_allo'...
+Processing sample 'Tar552_allo'...
+Processing sample 'Tar526_c'...
+Processing sample 'Tar771_allo'...
+Processing sample 'Tar528_c'...
+Processing sample 'Tar260_allo'...
+Processing sample 'Tan710'...
+Processing sample 'Tan707'...
+Processing sample 'Tan709'...
+Processing sample 'Tma068_allo'...
+Processing sample 'Tjo3765'...
+Processing sample 'Tar547_c'...
+Processing sample 'Tma559_allo'...
+Processing sample 'Tma071_allo'...
+Processing sample 'Tma560_allo'...
+Processing sample 'Tma556_allo'...
+Processing sample 'Tar299_N'...
+Processing sample 'Tan711'...
+Processing sample 'Tar529_N'...
+Processing sample 'Tar177_N'...
+Processing sample 'Tan3755'...
+Processing sample 'Tma561_allo'...
+Processing sample 'Tma718_allo'...
+Processing sample 'Tma720_allo'...
+Processing sample 'Tma729_allo'...
+
+Sample 'Tan254': matched 41587 sample loci to 40802 catalog loci; wrote 2244997 records.
+Sample 'Tan3755': matched 54619 sample loci to 52952 catalog loci; wrote 2381940 records.
+Sample 'Tan707': matched 47115 sample loci to 45735 catalog loci; wrote 2060300 records.
+Sample 'Tan709': matched 47837 sample loci to 45423 catalog loci; wrote 2085420 records.
+Sample 'Tan710': matched 56685 sample loci to 54088 catalog loci; wrote 2419951 records.
+Sample 'Tan711': matched 116698 sample loci to 114379 catalog loci; wrote 2997277 records.
+Sample 'Tar177_N': matched 79324 sample loci to 77715 catalog loci; wrote 2162528 records.
+Sample 'Tar299_N': matched 39630 sample loci to 38672 catalog loci; wrote 1803658 records.
+Sample 'Tar529_N': matched 49067 sample loci to 47635 catalog loci; wrote 1986069 records.
+Sample 'Tar260_allo': matched 44327 sample loci to 43617 catalog loci; wrote 1082864 records.
+Sample 'Tar552_allo': matched 14327 sample loci to 14072 catalog loci; wrote 150099 records.
+Sample 'Tar553_allo': matched 5997 sample loci to 5980 catalog loci; wrote 56163 records.
+Sample 'Tar769_allo': matched 52649 sample loci to 51674 catalog loci; wrote 2238227 records.
+Sample 'Tar770_allo': matched 59683 sample loci to 57686 catalog loci; wrote 1833013 records.
+Sample 'Tar771_allo': matched 82050 sample loci to 80245 catalog loci; wrote 1743875 records.
+Sample 'Tar526_c': matched 47114 sample loci to 45658 catalog loci; wrote 1611103 records.
+Sample 'Tar528_c': matched 73528 sample loci to 69966 catalog loci; wrote 2576345 records.
+Sample 'Tar547_c': matched 47008 sample loci to 45082 catalog loci; wrote 1363909 records.
+Sample 'Tjo3765': matched 151291 sample loci to 148731 catalog loci; wrote 3405931 records.
+Sample 'Tma068_allo': matched 6802 sample loci to 6720 catalog loci; wrote 68227 records.
+Sample 'Tma071_allo': matched 8701 sample loci to 8627 catalog loci; wrote 85465 records.
+Sample 'Tma556_allo': matched 6146 sample loci to 6031 catalog loci; wrote 61492 records.
+Sample 'Tma559_allo': matched 3935 sample loci to 3900 catalog loci; wrote 34333 records.
+Sample 'Tma560_allo': matched 6039 sample loci to 5980 catalog loci; wrote 62359 records.
+Sample 'Tma561_allo': matched 76922 sample loci to 74578 catalog loci; wrote 1741332 records.
+Sample 'Tma718_allo': matched 12528 sample loci to 12323 catalog loci; wrote 130656 records.
+Sample 'Tma720_allo': matched 7200 sample loci to 7106 catalog loci; wrote 76345 records.
+Sample 'Tma729_allo': matched 3651 sample loci to 3632 catalog loci; wrote 35141 records.
+
+tsv2bam is done.
+
+gstacks
+==========
+gstacks -P . -t 24 -M new_popmap_lane2.txt
+
+Logging to './gstacks.log'.
+Locus/sample distributions will be written to './gstacks.log.distribs'.
+
+Configuration for this run:
+  Input mode: denovo
+  Population map: 'new_popmap_lane2.txt'
+  Input files: 28, e.g. './Tan254.matches.bam'
+  Output to: './'
+  Model: marukilow (var_alpha: 0.01, gt_alpha: 0.05)
+
+Reading BAM headers...
+Processing all loci...
+1%...
+2%...
+5%...
+10%...
+20%...
+50%...
+100%
+Input appears to be single-end (no paired-end reads were seen).
+
+Genotyped 646159 loci:
+  effective per-sample coverage: mean=43.7x, stdev=26.6x, min=9.1x, max=81.8x
+  mean number of sites per locus: 120.0
+  a consistent phasing was found for 38319 of out 45588 (84.1%) diploid loci needing phasing
+
+gstacks is done.
+
+populations
+==========
+populations -P . -t 24 -M new_popmap_lane2.txt
+
+Logging to './populations.log'.
+Locus/sample distributions will be written to './populations.log.distribs'.
+populations parameters selected:
+  Percent samples limit per population: 0
+  Locus Population limit: 1
+  Percent samples overall: 0
+  Minor allele frequency cutoff: 0
+  Maximum observed heterozygosity cutoff: 1
+  Applying Fst correction: none.
+  Pi/Fis kernel smoothing: off
+  F-stats kernel smoothing: off
+  Bootstrap resampling: off
+
+Parsing population map...
+The population map contained 28 samples, 6 population(s), 1 group(s).
+Working on 28 samples.
+Working on 6 population(s):
+    Tan: Tan254, Tan3755, Tan707, Tan709, Tan710, Tan711
+    Tar_N: Tar177_N, Tar299_N, Tar529_N
+    Tar_allo: Tar260_allo, Tar552_allo, Tar553_allo, Tar769_allo, Tar770_allo, Tar771_allo
+    Tar_c: Tar526_c, Tar528_c, Tar547_c
+    Tjo: Tjo3765
+    Tma_allo: Tma068_allo, Tma071_allo, Tma556_allo, Tma559_allo, Tma560_allo, Tma561_allo, Tma718_allo, Tma720_allo, Tma729_allo
+Working on 1 group(s) of populations:
+    defaultgrp: Tan, Tar_N, Tar_allo, Tar_c, Tjo, Tma_allo
+
+Raw haplotypes will be written to './populations.haplotypes.tsv'
+Population-level summary statistics will be written to './populations.sumstats.tsv'
+Population-level haplotype summary statistics will be written to './populations.hapstats.tsv'
+
+Processing data in batches:
+  * load a batch of catalog loci and apply filters
+  * compute SNP- and haplotype-wise per-population statistics
+  * write the above statistics in the output files
+  * export the genotypes/haplotypes in specified format(s)
+More details in './populations.log.distribs'.
+
+Now processing...
+Batch 1 
+Batch 2 
+Batch 3 
+Batch 4 
+Batch 5 
+Batch 6 
+Batch 7 
+Batch 8 
+Batch 9 
+Batch 10 
+Batch 11 
+Batch 12 
+Batch 13 
+Batch 14 
+Batch 15 
+Batch 16 
+Batch 17 
+Batch 18 
+Batch 19 
+Batch 20 
+Batch 21 
+Batch 22 
+Batch 23 
+Batch 24 
+Batch 25 
+Batch 26 
+Batch 27 
+Batch 28 
+Batch 29 
+Batch 30 
+Batch 31 
+Batch 32 
+Batch 33 
+Batch 34 
+Batch 35 
+Batch 36 
+Batch 37 
+Batch 38 
+Batch 39 
+Batch 40 
+Batch 41 
+Batch 42 
+Batch 43 
+Batch 44 
+Batch 45 
+Batch 46 
+Batch 47 
+Batch 48 
+Batch 49 
+Batch 50 
+Batch 51 
+Batch 52 
+Batch 53 
+Batch 54 
+Batch 55 
+Batch 56 
+Batch 57 
+Batch 58 
+Batch 59 
+Batch 60 
+Batch 61 
+Batch 62 
+Batch 63 
+Batch 64 
+Batch 65 
+
+Removed 0 loci that did not pass sample/population constraints from 646159 loci.
+Kept 646159 loci, composed of 77528114 sites; 0 of those sites were filtered, 197273 variant sites remained.
+Mean genotyped sites per locus: 119.98bp (stderr 0.00).
+
+Population summary statistics (more detail in populations.sumstats_summary.tsv):
+  Tan: 3.2097 samples per locus; pi: 0.19357; all/variant/polymorphic sites: 28760276/167633/68607; private alleles: 46719
+  Tar_N: 2.1692 samples per locus; pi: 0.13354; all/variant/polymorphic sites: 14616293/130698/31827; private alleles: 20066
+  Tar_allo: 2.7954 samples per locus; pi: 0.15925; all/variant/polymorphic sites: 21133113/150571/49759; private alleles: 33478
+  Tar_c: 2.1658 samples per locus; pi: 0.13631; all/variant/polymorphic sites: 13745934/138456/34569; private alleles: 23352
+  Tjo: 1 samples per locus; pi: 0.12351; all/variant/polymorphic sites: 17809893/110558/13655; private alleles: 14280
+  Tma_allo: 1.8408 samples per locus; pi: 0.11687; all/variant/polymorphic sites: 12372294/122668/22948; private alleles: 13548
+Populations is done.
+denovo_map.pl is done.
+
+denovo_map.pl completed at 2023-11-06 02:31:30
